@@ -1,6 +1,6 @@
 # Sessão 03 — HTML e CSS
 
-**Sessão 3 de 21 · cerca de 5 semanas**
+**Sessão 3 de 27 · cerca de 5 semanas**
 
 A Estante vira um site de verdade: várias páginas, layout que cabe no celular e publicação no GitHub Pages. Ainda não há JavaScript. Se a página só funciona com script, ela ficou para a próxima sessão.
 

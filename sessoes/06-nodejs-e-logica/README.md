@@ -1,13 +1,13 @@
 # Sessão 06 — Node.js e lógica de programação
 
-**Sessão 6 de 21 · cerca de 6 semanas**
+**Sessão 6 de 27 · cerca de 6 semanas**
 
 A Estante vira um programa de linha de comando: incluir, listar, concluir e apagar itens num arquivo JSON. O assunto novo, por baixo dos comandos, é lógica: quebrar um problema, dar nome ao dado e testar o pedaço sem abrir o navegador.
 
 > **Trilha:** [Índice](../../README.md) · [Como estudar](../../COMO-ESTUDAR.md) · [Progresso](../../PROGRESSO.md)
 >
 > **← Anterior:** [05 · Ambiente Node.js](../05-ambiente-nodejs/README.md)
-> **Próxima →** [07 · SQLite](../07-sqlite/README.md)
+> **Próxima →** [07 · Async e await](../07-async-e-await/README.md)
 
 ## O que você vai saber fazer
 
@@ -15,7 +15,7 @@ A Estante vira um programa de linha de comando: incluir, listar, concluir e apag
 - Ler e escrever arquivo com o módulo `node:fs`.
 - Tratar erro esperado (arquivo ausente, JSON inválido, comando desconhecido).
 - Cobrir as funções puras com o test runner que já vem no Node.
-- Usar `async/await` numa operação de arquivo.
+- Usar `async/await` para gravar o arquivo. O modelo do event loop fica na sessão seguinte.
 
 ## Documentação
 
@@ -204,4 +204,4 @@ Pode ajustar nomes. Não pode: um único arquivo com centenas de linhas.
 
 ## Próximo passo
 
-Siga para [07 · SQLite](../07-sqlite/README.md). A CLI continua; o JSON sai.
+Siga para [07 · Async e await](../07-async-e-await/README.md). A CLI continua; o que muda agora é o tempo: quando o programa espera o disco e quando ele segue.

@@ -1,6 +1,6 @@
 # Sessão 04 — JavaScript no navegador
 
-**Sessão 4 de 21 · cerca de 8 semanas**
+**Sessão 4 de 27 · cerca de 8 semanas**
 
 A página deixa de ser só documento. Você lê campos, monta fichas, guarda a coleção no navegador e organiza o código em funções. O servidor ainda não existe: se você desligar a internet, a Estante continua, porque os dados estão no `localStorage`.
 

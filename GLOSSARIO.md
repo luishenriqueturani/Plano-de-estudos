@@ -29,7 +29,7 @@ Definições curtas para destravar a leitura. O detalhe mora na documentação l
 | Chave primária | O identificador único de uma linha. |
 | Chave estrangeira | Uma coluna que aponta para a chave primária de outra tabela. |
 | SQLite | Um banco inteiro dentro de um arquivo. Bom para aprender SQL. |
-| PostgreSQL | Um servidor de banco, usado da sessão 08 em diante. |
+| PostgreSQL | Um servidor de banco, usado da sessão 10 em diante. |
 | Container | Um processo isolado, criado a partir de uma imagem. |
 | Imagem | O pacote imutável com o programa que o container vai rodar. |
 | Volume | O disco que sobrevive quando o container é apagado. |
@@ -52,3 +52,14 @@ Definições curtas para destravar a leitura. O detalhe mora na documentação l
 | CORS | A regra do navegador sobre qual outro site pode chamar a sua API. |
 | Proxy reverso | Um servidor na frente dos outros. Aqui, o Nginx recebe o pedido e encaminha para o Next ou para o Nest. |
 | Variável de ambiente | Configuração que fica fora do código, como porta, usuário do banco e segredo do token. |
+| Promise | Um valor que ainda vai chegar, ou um erro. `async/await` é a forma de esperar esse valor sem aninhar callbacks. |
+| Event loop | O ciclo do Node que alterna o seu código e as operações de entrada e saída. Uma thread só, muitas tarefas em andamento. |
+| Concorrência | Várias tarefas em progresso ao mesmo tempo, mesmo que uma só rode de cada vez. |
+| Paralelismo | Várias tarefas executando ao mesmo tempo, em threads ou processos diferentes. |
+| Worker | Um processo ou thread separado que executa trabalho fora do pedido HTTP. |
+| Fila | Uma lista durável de trabalhos. Quem produz o trabalho não precisa ser quem executa. |
+| Tailwind | CSS por classes prontas no HTML, em vez de um arquivo de estilo escrito à mão para cada tela. |
+| Métrica | Um número sobre o sistema ao longo do tempo, como quantos pedidos a API atendeu. |
+| Log | O registro de um fato. Em produção, uma linha JSON com horário, nível, mensagem e id do pedido. |
+| Pull request | A proposta de juntar uma mudança na branch principal, com o diff visível para outra pessoa ler. |
+| Pipeline | A sequência automática de passos (teste, lint, build) que roda em cima de uma proposta. CI é esse hábito de verificar antes de juntar. |

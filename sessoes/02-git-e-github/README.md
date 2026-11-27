@@ -1,6 +1,6 @@
 # Sessão 02 — Git e GitHub
 
-**Sessão 2 de 21 · cerca de 2 semanas**
+**Sessão 2 de 27 · cerca de 2 semanas**
 
 Cada atividade deste plano mora num repositório. Esta sessão cria a conta, o hábito de commit pequeno e o primeiro repositório da Estante, ainda sem página.
 
@@ -218,6 +218,21 @@ Inclua o que você faz se o `push` for recusado porque o remoto está na frente 
 **Faça:** no `treino-git`, altere um arquivo e desfaça a alteração no working tree com o comando que o livro indicar para descartar a mudança local ainda não commitada. Não use `git reset --hard` até ter lido o que ele apaga. Não use `git push --force`.
 
 **Pronto quando:** as notas dizem qual comando você usou e o que ele não recupera.
+
+## O que um time faz com isso
+
+Nesta trilha você grava o histórico e envia para o GitHub. Num emprego, o caminho até a branch principal costuma ter mais dois nomes. Vale saber o que são. Montar isso fica para quando você for trabalhar num projeto de verdade.
+
+**Pull request.** É a proposta de entrar com as suas mudanças na branch principal. A página mostra o diff, alguém lê, comenta, e só então o código é juntado. No começo, a parte de quem está chegando é abrir esse pedido e responder o comentário. Essa prática fica para um projeto com outra pessoa. Esta trilha não pede para você abrir um.
+
+**CI e pipeline.** CI é a verificação automática que roda em cima dessa proposta: teste, lint, build. Pipeline é a sequência desses passos, um atrás do outro. Se um falha, a proposta não entra. Você vê um sinal verde ou vermelho na página do pull request. Não é você quem escreve essa esteira no primeiro mês.
+
+**GitHub Actions** é o mecanismo do GitHub que executa essa pipeline. Outras empresas usam outras ferramentas para a mesma ideia. O conceito é o mesmo: alguém configurou os passos, e o resultado aparece na proposta.
+
+Leitura, se quiser ver a cara da coisa, sem reproduzir:
+
+- [Sobre pull requests](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+- [Entender o GitHub Actions](https://docs.github.com/pt/actions/get-started/understand-github-actions)
 
 ## Checklist
 

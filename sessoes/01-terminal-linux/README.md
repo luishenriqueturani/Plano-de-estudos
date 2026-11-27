@@ -1,6 +1,6 @@
 # Sessão 01 — Terminal no Linux (CachyOS)
 
-**Sessão 1 de 21 · cerca de 1 semana**
+**Sessão 1 de 27 · cerca de 1 semana**
 
 O terminal é a ferramenta das próximas vinte sessões. Git, nvm, Docker e os bancos vão ser usados por comando. Esta semana deixa esses comandos familiares antes de aparecer programação.
 
