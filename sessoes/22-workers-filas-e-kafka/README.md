@@ -1,15 +1,15 @@
-# Sessão 21 — Workers, filas e Kafka
+# Sessão 22 — Workers, filas e Kafka
 
-**Sessão 21 de 27 · cerca de 3 semanas**
+**Sessão 22 de 28 · cerca de 3 semanas**
 
-O cron da sessão 20 acorda dentro do mesmo processo da API. Isso serve para um lembrete leve. Deixa de servir quando o trabalho demora, falha no meio, ou precisa sobreviver a um restart: enviar e-mail, gerar um relatório, avisar outro sistema. Aí o pedido HTTP só registra o trabalho numa fila. Outro processo, o worker, executa.
+O cron da sessão 21 acorda dentro do mesmo processo da API. Isso serve para um lembrete leve. Deixa de servir quando o trabalho demora, falha no meio, ou precisa sobreviver a um restart: enviar e-mail, gerar um relatório, avisar outro sistema. Aí o pedido HTTP só registra o trabalho numa fila. Outro processo, o worker, executa.
 
 Kafka entra na segunda metade. Não é "uma fila mais famosa". É um registro de eventos que vários consumidores podem ler, cada um no próprio ritmo. Você vai publicar um fato da Estante e ler esse fato em outro processo. A sessão 08 pediu essa distinção. Aqui ela vira código.
 
 > **Trilha:** [Índice](../../README.md) · [Como estudar](../../COMO-ESTUDAR.md) · [Progresso](../../PROGRESSO.md)
 >
-> **← Anterior:** [20 · Tarefas agendadas](../20-cron-jobs/README.md)
-> **Próxima →** [22 · Segurança do backend](../22-seguranca-backend/README.md)
+> **← Anterior:** [21 · Tarefas agendadas](../21-cron-jobs/README.md)
+> **Próxima →** [23 · Segurança do backend](../23-seguranca-backend/README.md)
 
 ## O que você vai saber fazer
 
@@ -28,7 +28,7 @@ Kafka entra na segunda metade. Não é "uma fila mais famosa". É um registro de
 - [Imagem do Redis](https://hub.docker.com/_/redis)
 - [Começar com o Kafka](https://kafka.apache.org/quickstart)
 - [Introdução da documentação do Kafka](https://kafka.apache.org/documentation/#gettingStarted)
-- A sessão [08](../08-concorrencia-e-paralelismo/README.md) e o cron da sessão [20](../20-cron-jobs/README.md)
+- A sessão [08](../08-concorrencia-e-paralelismo/README.md) e o cron da sessão [20](../21-cron-jobs/README.md)
 
 BullMQ é a fila deste plano porque fala JavaScript e usa Redis, que você sobe com o Docker que já tem. O conceito (produtor, trabalho, worker, tentativa) aparece em outras ferramentas com outros nomes.
 
@@ -38,7 +38,7 @@ Continue em `estante-nest`. O worker pode ser outro arquivo de entrada no mesmo 
 
 ### Tarefa 1 — Três palavras
 
-**Faça:** no README, defina produtor, fila e worker com a rotina da sessão 20. O cron é produtor. O worker faz a marcação de item parado, ou o trabalho que você escolheu. A API continua respondendo enquanto o worker trabalha.
+**Faça:** no README, defina produtor, fila e worker com a rotina da sessão 21. O cron é produtor. O worker faz a marcação de item parado, ou o trabalho que você escolheu. A API continua respondendo enquanto o worker trabalha.
 
 **Pronto quando:** o desenho tem dois processos Node, não um.
 
@@ -60,7 +60,7 @@ Continue em `estante-nest`. O worker pode ser outro arquivo de entrada no mesmo 
 
 ### Tarefa 4 — O cron só enfileira
 
-**Faça:** a rotina da sessão 20 deixa de fazer o trabalho pesado no processo da API. No horário, ela consulta quem precisa de atenção e adiciona um job por item (ou um job com a lista, se você justificar). O worker executa a regra que já tinha teste.
+**Faça:** a rotina da sessão 21 deixa de fazer o trabalho pesado no processo da API. No horário, ela consulta quem precisa de atenção e adiciona um job por item (ou um job com a lista, se você justificar). O worker executa a regra que já tinha teste.
 
 **Pronto quando:** o teste da regra continua sem Redis, e o caminho do cron até o banco passa pela fila. O README descreve os dois comandos: API e worker.
 
@@ -141,4 +141,4 @@ Ajuste os nomes ao que você realmente ligou.
 
 ## Próximo passo
 
-Siga para [22 · Segurança do backend](../22-seguranca-backend/README.md). A fila e o tópico ficam de pé: o e-mail da sessão 24 vai entrar como job, não como chamada no meio do login.
+Siga para [23 · Segurança do backend](../23-seguranca-backend/README.md). A fila e o tópico ficam de pé: o e-mail da sessão 25 vai entrar como job, não como chamada no meio do login.

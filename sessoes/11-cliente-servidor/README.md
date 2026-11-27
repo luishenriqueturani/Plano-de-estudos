@@ -1,6 +1,6 @@
 # Sessão 11 — Cliente e servidor
 
-**Sessão 11 de 27 · cerca de 2 semanas**
+**Sessão 11 de 28 · cerca de 2 semanas**
 
 Até aqui, quem mexe nos dados é você, no terminal. Um site precisa de outro arranjo: o navegador pede, um processo responde. Esta sessão dá nome a esse arranjo e implementa uma API mínima com o `node:http`, sem framework. A tela bonita que consome a API é a sessão 12.
 
@@ -104,7 +104,7 @@ Ajuste se a sua Estante tiver outro campo, mas não deixe rota sem status de err
 
 **Leia:** [CORS](https://developer.mozilla.org/pt-BR/docs/Glossary/CORS).
 
-**Faça:** abra uma página local (pode ser a da sessão 04) que tenta `fetch('http://localhost:3000/itens')`. Observe o erro no console. Depois responda o cabeçalho `Access-Control-Allow-Origin` com `http://127.0.0.1:PORTA` ou a origem exata que o navegador mostrou, só para o `GET`. Anote por que você não usou `*` como hábito para o resto da vida: na sessão 22 a API passa a carregar credencial, e origem aberta junto de credencial é uma combinação que a documentação do Nest também alerta para evitar.
+**Faça:** abra uma página local (pode ser a da sessão 04) que tenta `fetch('http://localhost:3000/itens')`. Observe o erro no console. Depois responda o cabeçalho `Access-Control-Allow-Origin` com `http://127.0.0.1:PORTA` ou a origem exata que o navegador mostrou, só para o `GET`. Anote por que você não usou `*` como hábito para o resto da vida: na sessão 23 a API passa a carregar credencial, e origem aberta junto de credencial é uma combinação que a documentação do Nest também alerta para evitar.
 
 **Pronto quando:** o `GET` a partir da página funciona, o README explica o erro que existia antes, e o `POST` cross-origin pode continuar falhando. Completar o preflight é a tarefa 11.
 

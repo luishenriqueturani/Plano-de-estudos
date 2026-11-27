@@ -1,6 +1,6 @@
 # Sessão 05 — Ambiente Node.js e nvm
 
-**Sessão 5 de 27 · cerca de 1 semana**
+**Sessão 5 de 28 · cerca de 1 semana**
 
 O Node é o JavaScript fora do navegador. O nvm instala a versão que o projeto pede e permite trocar depois, sem misturar com o pacote da distribuição. Nesta semana você instala, confere e deixa registrado. A lógica maior fica na sessão 06.
 

@@ -1,6 +1,6 @@
 # Sessão 02 — Git e GitHub
 
-**Sessão 2 de 27 · cerca de 2 semanas**
+**Sessão 2 de 28 · cerca de 2 semanas**
 
 Cada atividade deste plano mora num repositório. Esta sessão cria a conta, o hábito de commit pequeno e o primeiro repositório da Estante, ainda sem página.
 

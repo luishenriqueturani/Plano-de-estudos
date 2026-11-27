@@ -1,6 +1,6 @@
 # Sessão 15 — TypeScript com Node
 
-**Sessão 15 de 27 · cerca de 4 semanas**
+**Sessão 15 de 28 · cerca de 4 semanas**
 
 O JavaScript aceita passar um item sem título e só descobre na hora. O TypeScript aponta isso antes de rodar, se os tipos forem honestos. Esta sessão tipa a regra da Estante e um pedaço do servidor. Next.js e NestJS, nas sessões seguintes, já nascem em TypeScript. Quem chega lá sem ter lutado com um erro de tipo sofre nas duas ao mesmo tempo.
 

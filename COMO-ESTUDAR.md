@@ -44,6 +44,7 @@ No seu computador, uma pasta só para código:
   estante-api/
   estante-react/
   estante-next/
+  estante-objetos/
   estante-nest/
   estante-final/
 ```

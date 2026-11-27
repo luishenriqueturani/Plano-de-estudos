@@ -1,6 +1,6 @@
 # Sessão 16 — Next.js, TypeScript e SSR
 
-**Sessão 16 de 27 · cerca de 6 semanas**
+**Sessão 16 de 28 · cerca de 6 semanas**
 
 O Next.js junta a interface React e um servidor de páginas. Com SSR, o HTML da lista já chega montado: quem abre a Estante recebe os itens no primeiro carregamento, e o navegador não precisa esperar um `useEffect` para ver alguma coisa.
 
@@ -9,7 +9,7 @@ Nesta sessão o projeto é fullstack dentro do Next: as páginas e o acesso ao P
 > **Trilha:** [Índice](../../README.md) · [Como estudar](../../COMO-ESTUDAR.md) · [Progresso](../../PROGRESSO.md)
 >
 > **← Anterior:** [15 · TypeScript com Node](../15-typescript-com-node/README.md)
-> **Próxima →** [17 · NestJS](../17-nestjs/README.md)
+> **Próxima →** [17 · Programação orientada a objetos](../17-poo/README.md)
 
 ## O que você vai saber fazer
 
@@ -155,9 +155,9 @@ Repositório `estante-next`. Postgres da sessão 10, esquema já criado. Pode re
 
 ### Tarefa 16 — README
 
-**Faça:** requisitos, `.env.example`, Compose, `npm install`, `npm run dev`, `npm run build`. Diga que esta versão fala com o Postgres direto e que a sessão 23 troca isso pela API do Nest.
+**Faça:** requisitos, `.env.example`, Compose, `npm install`, `npm run dev`, `npm run build`. Diga que esta versão fala com o Postgres direto e que a sessão 24 troca isso pela API do Nest.
 
-**Pronto quando:** a frase sobre a sessão 23 está escrita. Ela evita que você se perca quando o acesso ao banco mudar de lugar.
+**Pronto quando:** a frase sobre a sessão 24 está escrita. Ela evita que você se perca quando o acesso ao banco mudar de lugar.
 
 ## Checklist
 
@@ -176,8 +176,8 @@ Repositório `estante-next`. Postgres da sessão 10, esquema já criado. Pode re
 - [ ] 13. Três respostas de segurança
 - [ ] 14. Visual nos dois tamanhos
 - [ ] 15. `build` e `start`
-- [ ] 16. README com o aviso da sessão 23
+- [ ] 16. README com o aviso da sessão 24
 
 ## Próximo passo
 
-Siga para [17 · NestJS](../17-nestjs/README.md).
+Siga para [17 · Programação orientada a objetos](../17-poo/README.md). O NestJS vem na sessão seguinte e assume classe, método e construtor.

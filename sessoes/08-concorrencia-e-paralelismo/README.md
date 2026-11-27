@@ -1,10 +1,10 @@
 # Sessão 08 — Concorrência e paralelismo
 
-**Sessão 8 de 27 · cerca de 2 semanas**
+**Sessão 8 de 28 · cerca de 2 semanas**
 
 Async e await fizeram o Node esperar arquivo e timer sem congelar a aparência do código. Isso é concorrência: várias coisas em andamento, uma thread executando o seu JavaScript. Paralelismo é outra coisa: duas partes do trabalho andando ao mesmo tempo, em threads ou processos diferentes.
 
-Fila, worker de verdade e Kafka ficam para a sessão 21, quando já existir uma API. Aqui o objetivo é o conceito, com um experimento pequeno em cada lado.
+Fila, worker de verdade e Kafka ficam para a sessão 22, quando já existir uma API. Aqui o objetivo é o conceito, com um experimento pequeno em cada lado.
 
 > **Trilha:** [Índice](../../README.md) · [Como estudar](../../COMO-ESTUDAR.md) · [Progresso](../../PROGRESSO.md)
 >
@@ -75,7 +75,7 @@ Pode ser uma pasta `lab-concorrencia` dentro de `estante-cli`, ou um repositóri
 
 - Ler o JSON ou, mais tarde, consultar o banco: espera de entrada e saída, `async/await` na thread principal.
 - Gerar um relatório enorme, varrer milhares de títulos com conta pesada: worker ou processo separado.
-- Mandar um e-mail daqui a alguns meses: nem worker thread de brinquedo. Uma fila, sessão 21.
+- Mandar um e-mail daqui a alguns meses: nem worker thread de brinquedo. Uma fila, sessão 22.
 
 **Pronto quando:** a lista está no README.
 
@@ -87,13 +87,13 @@ Pode ser uma pasta `lab-concorrencia` dentro de `estante-cli`, ou um repositóri
 
 ### Tarefa 8 — O desenho
 
-**Faça:** um desenho com três caixas: thread principal, espera de disco, worker de CPU. Setas só onde existe mensagem ou conclusão. Kafka e Redis ainda não aparecem. Deixe um espaço vazio com o rótulo "fila, sessão 21".
+**Faça:** um desenho com três caixas: thread principal, espera de disco, worker de CPU. Setas só onde existe mensagem ou conclusão. Kafka e Redis ainda não aparecem. Deixe um espaço vazio com o rótulo "fila, sessão 22".
 
 **Pronto quando:** o desenho está no README e bate com as tarefas 2, 3 e 5.
 
 ### Tarefa 9 — Onde isso volta no plano
 
-**Faça:** uma tabela de quatro linhas: cron (sessão 20), fila com worker (sessão 21), e-mail (sessão 24), métrica (sessão 26). Em cada linha, "concorrência", "paralelismo" ou "os dois", com uma razão. É previsão: você confirma de novo quando chegar lá. Se a previsão mudar, você atualiza.
+**Faça:** uma tabela de quatro linhas: cron (sessão 21), fila com worker (sessão 22), e-mail (sessão 25), métrica (sessão 27). Em cada linha, "concorrência", "paralelismo" ou "os dois", com uma razão. É previsão: você confirma de novo quando chegar lá. Se a previsão mudar, você atualiza.
 
 **Pronto quando:** a tabela existe e nenhuma linha diz "tanto faz".
 

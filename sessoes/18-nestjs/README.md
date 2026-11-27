@@ -1,13 +1,13 @@
-# Sessão 17 — NestJS
+# Sessão 18 — NestJS
 
-**Sessão 17 de 27 · cerca de 5 semanas**
+**Sessão 18 de 28 · cerca de 5 semanas**
 
-O servidor com `node:http` ensinou o protocolo. O NestJS organiza o que aquele arquivo único já não aguenta: rotas, regra, validação e configuração em caixas com nome. A API da Estante nasce de novo aqui, primeiro em memória. O banco entra com o TypeORM na sessão 18.
+O servidor com `node:http` ensinou o protocolo. A sessão 17 separou classe, estado privado e um service que recebe o repositório no construtor. O NestJS organiza isso em caixas com nome: rotas, regra, validação e configuração. Quem chama o `new` agora é o framework. A API da Estante nasce de novo aqui, primeiro em memória. O banco entra com o TypeORM na sessão 19.
 
 > **Trilha:** [Índice](../../README.md) · [Como estudar](../../COMO-ESTUDAR.md) · [Progresso](../../PROGRESSO.md)
 >
-> **← Anterior:** [16 · Next.js](../16-nextjs/README.md)
-> **Próxima →** [18 · TypeORM](../18-typeorm/README.md)
+> **← Anterior:** [17 · Programação orientada a objetos](../17-poo/README.md)
+> **Próxima →** [19 · TypeORM](../19-typeorm/README.md)
 
 ## O que você vai saber fazer
 
@@ -53,7 +53,7 @@ Repositório `estante-nest`.
 
 **Leia:** [módulos](https://docs.nestjs.com/modules) e [controllers](https://docs.nestjs.com/controllers).
 
-**Faça:** gere o recurso de itens com a CLI (`nest g resource itens`), no estilo REST, **sem** transportar entidade de banco ainda se a CLI perguntar. Se a versão da CLI exigir uma escolha de ORM, escolha a que der para adiar o banco, ou aceite o esqueleto e deixe a entidade quieta até a sessão 18. O objetivo desta sessão é a estrutura.
+**Faça:** gere o recurso de itens com a CLI (`nest g resource itens`), no estilo REST, **sem** transportar entidade de banco ainda se a CLI perguntar. Se a versão da CLI exigir uma escolha de ORM, escolha a que der para adiar o banco, ou aceite o esqueleto e deixe a entidade quieta até a sessão 19. O objetivo desta sessão é a estrutura.
 
 Implemente `GET /itens` e `GET /itens/:id` sobre um array dentro do service.
 
@@ -91,7 +91,7 @@ Implemente `GET /itens` e `GET /itens/:id` sobre um array dentro do service.
 
 ### Tarefa 8 — Injeção, com as suas palavras
 
-**Faça:** no README, explique injeção olhando o construtor do seu controller: quem cria o service, o que aconteceria se o controller desse `new ItensService()` ele mesmo, e onde o array moraria nesse caso (um array por controller, fácil de duplicar).
+**Faça:** no README, explique injeção olhando o construtor do seu controller: quem cria o service, o que aconteceria se o controller desse `new ItensService()` ele mesmo, e onde o array moraria nesse caso (um array por controller, fácil de duplicar). Compare com a sessão 17, em que o teste é que fazia o `new` do repositório e o service só recebia.
 
 **Pronto quando:** o texto cita os arquivos reais.
 
@@ -133,7 +133,7 @@ Implemente `GET /itens` e `GET /itens/:id` sobre um array dentro do service.
 
 ### Tarefa 14 — README de API
 
-**Faça:** como instalar, como rodar, a tabela de rotas, e a frase: os dados ainda somem quando o processo reinicia. A sessão 18 corrige isso.
+**Faça:** como instalar, como rodar, a tabela de rotas, e a frase: os dados ainda somem quando o processo reinicia. A sessão 19 corrige isso.
 
 **Pronto quando:** o `curl` do README cria um item de verdade.
 
@@ -156,4 +156,4 @@ Implemente `GET /itens` e `GET /itens/:id` sobre um array dentro do service.
 
 ## Próximo passo
 
-Siga para [18 · TypeORM](../18-typeorm/README.md).
+Siga para [19 · TypeORM](../19-typeorm/README.md).

@@ -1,13 +1,13 @@
-# Sessão 20 — Tarefas agendadas
+# Sessão 21 — Tarefas agendadas
 
-**Sessão 20 de 27 · cerca de 1 semana**
+**Sessão 21 de 28 · cerca de 1 semana**
 
 Tem trabalho que ninguém dispara clicando: lembrar item parado em "fazendo", apagar rascunho velho, contar quantos itens nasceram na semana. O Nest roda isso com `@nestjs/schedule`, no mesmo processo da API. A expressão cron é o calendário.
 
 > **Trilha:** [Índice](../../README.md) · [Como estudar](../../COMO-ESTUDAR.md) · [Progresso](../../PROGRESSO.md)
 >
-> **← Anterior:** [19 · Migrations e seeders](../19-migrations-e-seeders/README.md)
-> **Próxima →** [21 · Workers, filas e Kafka](../21-workers-filas-e-kafka/README.md)
+> **← Anterior:** [20 · Migrations e seeders](../20-migrations-e-seeders/README.md)
+> **Próxima →** [22 · Workers, filas e Kafka](../22-workers-filas-e-kafka/README.md)
 
 ## O que você vai saber fazer
 
@@ -27,7 +27,7 @@ A documentação mostra expressões de seis campos (com segundos). Use o formato
 
 ### Tarefa 1 — Um trabalho com motivo
 
-**Faça:** escolha uma rotina da Estante. Sugestão: itens em `fazendo` sem atualização há mais de N dias passam a ter um marcador `parado`, ou geram uma linha de log com a contagem. O marcador precisa da coluna que você criou na sessão 19, ou de uma migration nova. Escreva a regra em três linhas antes de instalar o pacote.
+**Faça:** escolha uma rotina da Estante. Sugestão: itens em `fazendo` sem atualização há mais de N dias passam a ter um marcador `parado`, ou geram uma linha de log com a contagem. O marcador precisa da coluna que você criou na sessão 20, ou de uma migration nova. Escreva a regra em três linhas antes de instalar o pacote.
 
 **Pronto quando:** dá para testar a regra chamando o service na mão, sem cron.
 
@@ -74,7 +74,7 @@ Troque o job de depuração para uma delas só enquanto você observa, depois vo
 
 ### Tarefa 7 — Não acoplar o HTTP
 
-**Faça:** não existe rota "rodar cron" pública. Se você quiser disparar na mão durante o desenvolvimento, um método do service chamado por um teste basta. Rota administrativa sem autenticação fica para nunca: a sessão 22 ainda nem começou.
+**Faça:** não existe rota "rodar cron" pública. Se você quiser disparar na mão durante o desenvolvimento, um método do service chamado por um teste basta. Rota administrativa sem autenticação fica para nunca: a sessão 23 ainda nem começou.
 
 **Pronto quando:** `docs/rotas.md` não ganhou endpoint de manutenção aberto.
 
@@ -97,4 +97,4 @@ Troque o job de depuração para uma delas só enquanto você observa, depois vo
 
 ## Próximo passo
 
-Siga para [21 · Workers, filas e Kafka](../21-workers-filas-e-kafka/README.md). O cron desta sessão marca a hora. A fila é quem passa a fazer o trabalho.
+Siga para [22 · Workers, filas e Kafka](../22-workers-filas-e-kafka/README.md). O cron desta sessão marca a hora. A fila é quem passa a fazer o trabalho.

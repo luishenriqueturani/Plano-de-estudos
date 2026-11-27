@@ -20,17 +20,18 @@ Marque a sessão quando o checklist do final dela estiver completo. Edite este a
 - [ ] 14 · [Tailwind](sessoes/14-tailwind/README.md)
 - [ ] 15 · [TypeScript com Node](sessoes/15-typescript-com-node/README.md)
 - [ ] 16 · [Next.js](sessoes/16-nextjs/README.md)
-- [ ] 17 · [NestJS](sessoes/17-nestjs/README.md)
-- [ ] 18 · [TypeORM](sessoes/18-typeorm/README.md)
-- [ ] 19 · [Migrations e seeders](sessoes/19-migrations-e-seeders/README.md)
-- [ ] 20 · [Tarefas agendadas](sessoes/20-cron-jobs/README.md)
-- [ ] 21 · [Workers, filas e Kafka](sessoes/21-workers-filas-e-kafka/README.md)
-- [ ] 22 · [Segurança do backend](sessoes/22-seguranca-backend/README.md)
-- [ ] 23 · [Segurança do frontend](sessoes/23-seguranca-frontend/README.md)
-- [ ] 24 · [E-mail e push](sessoes/24-email-e-push/README.md)
-- [ ] 25 · [Deploy com Docker e Nginx](sessoes/25-deploy-docker-nginx/README.md)
-- [ ] 26 · [Observabilidade](sessoes/26-observabilidade/README.md)
-- [ ] 27 · [Projeto final](sessoes/27-projeto-final/README.md)
+- [ ] 17 · [Programação orientada a objetos](sessoes/17-poo/README.md)
+- [ ] 18 · [NestJS](sessoes/18-nestjs/README.md)
+- [ ] 19 · [TypeORM](sessoes/19-typeorm/README.md)
+- [ ] 20 · [Migrations e seeders](sessoes/20-migrations-e-seeders/README.md)
+- [ ] 21 · [Tarefas agendadas](sessoes/21-cron-jobs/README.md)
+- [ ] 22 · [Workers, filas e Kafka](sessoes/22-workers-filas-e-kafka/README.md)
+- [ ] 23 · [Segurança do backend](sessoes/23-seguranca-backend/README.md)
+- [ ] 24 · [Segurança do frontend](sessoes/24-seguranca-frontend/README.md)
+- [ ] 25 · [E-mail e push](sessoes/25-email-e-push/README.md)
+- [ ] 26 · [Deploy com Docker e Nginx](sessoes/26-deploy-docker-nginx/README.md)
+- [ ] 27 · [Observabilidade](sessoes/27-observabilidade/README.md)
+- [ ] 28 · [Projeto final](sessoes/28-projeto-final/README.md)
 
 ## Notas livres
 
@@ -49,9 +50,10 @@ Use este espaço para datas, dúvidas que ficaram e links dos seus repositórios
 | 14 | | | |
 | 16 | | | |
 | 17 | | | |
-| 21 | | | |
-| 23 | | | |
+| 18 | | | |
+| 22 | | | |
 | 24 | | | |
 | 25 | | | |
 | 26 | | | |
 | 27 | | | |
+| 28 | | | |

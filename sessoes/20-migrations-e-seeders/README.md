@@ -1,13 +1,13 @@
-# Sessão 19 — Migrations e seeders
+# Sessão 20 — Migrations e seeders
 
-**Sessão 19 de 27 · cerca de 2 semanas**
+**Sessão 20 de 28 · cerca de 2 semanas**
 
 Enquanto `synchronize` está ligado, o TypeORM tenta deixar o banco parecido com as classes. Isso serve para experimentar e machuca quando já existe dado e mais de um ambiente. Migration é um arquivo na ordem do tempo, com um jeito de aplicar e um jeito de desfazer. Seeder coloca os dados iniciais, como as categorias, sem depender de você clicar na tela.
 
 > **Trilha:** [Índice](../../README.md) · [Como estudar](../../COMO-ESTUDAR.md) · [Progresso](../../PROGRESSO.md)
 >
-> **← Anterior:** [18 · TypeORM](../18-typeorm/README.md)
-> **Próxima →** [20 · Tarefas agendadas](../20-cron-jobs/README.md)
+> **← Anterior:** [19 · TypeORM](../19-typeorm/README.md)
+> **Próxima →** [21 · Tarefas agendadas](../21-cron-jobs/README.md)
 
 ## O que você vai saber fazer
 
@@ -105,7 +105,7 @@ Cada um chama a CLI ou o script com o data source certo. O README lista a ordem 
 
 ### Tarefa 11 — O que não entra no seed
 
-**Faça:** o seed não cria usuário administrador com senha conhecida. Isso fica para a sessão 22, e mesmo lá a senha não mora no Git. O seed desta sessão é dado de catálogo, não credencial.
+**Faça:** o seed não cria usuário administrador com senha conhecida. Isso fica para a sessão 23, e mesmo lá a senha não mora no Git. O seed desta sessão é dado de catálogo, não credencial.
 
 **Pronto quando:** o README diz isso numa frase, e o script não contém senha.
 
@@ -125,4 +125,4 @@ Cada um chama a CLI ou o script com o data source certo. O README lista a ordem 
 
 ## Próximo passo
 
-Siga para [20 · Tarefas agendadas](../20-cron-jobs/README.md).
+Siga para [21 · Tarefas agendadas](../21-cron-jobs/README.md).

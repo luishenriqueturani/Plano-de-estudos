@@ -1,6 +1,6 @@
 # Sessão 14 — Tailwind
 
-**Sessão 14 de 27 · cerca de 2 semanas**
+**Sessão 14 de 28 · cerca de 2 semanas**
 
 O CSS da sessão 13 foi escrito à mão, de propósito. Tailwind é o outro extremo: a maior parte do visual mora em classes no próprio componente, com um vocabulário fixo de espaço, cor, tipo e tela. Você não está trocando de produto. Está vestindo a mesma Estante de outro jeito, para sentir o que a ferramenta economiza e o que ela esconde.
 

@@ -1,8 +1,8 @@
-# Sessão 26 — Observabilidade com Prometheus e Grafana
+# Sessão 27 — Observabilidade com Prometheus e Grafana
 
-**Sessão 26 de 27 · cerca de 3 semanas**
+**Sessão 27 de 28 · cerca de 3 semanas**
 
-Subir a stack, na sessão 25, responde "está no ar?". Não responde "quantos logins falharam na última hora?" nem "qual pedido quebrou e por quê?". Observabilidade, neste plano, são as duas respostas: número ao longo do tempo, e o registro daquele pedido.
+Subir a stack, na sessão 26, responde "está no ar?". Não responde "quantos logins falharam na última hora?" nem "qual pedido quebrou e por quê?". Observabilidade, neste plano, são as duas respostas: número ao longo do tempo, e o registro daquele pedido.
 
 Prometheus guarda as métricas. A API expõe um endereço que ele visita. Grafana desenha. O log sai em JSON, uma linha por fato, com um id que amarra as linhas do mesmo pedido. Rastreio distribuído, o desenho do caminho entre Nginx, Nest e banco, fica de fora: o README diz o nome (trace) sem implementar.
 
@@ -10,8 +10,8 @@ O endereço de métricas não passa pelo Nginx público. Só a rede do Compose, 
 
 > **Trilha:** [Índice](../../README.md) · [Como estudar](../../COMO-ESTUDAR.md) · [Progresso](../../PROGRESSO.md)
 >
-> **← Anterior:** [25 · Deploy com Docker e Nginx](../25-deploy-docker-nginx/README.md)
-> **Próxima →** [27 · Projeto final](../27-projeto-final/README.md)
+> **← Anterior:** [26 · Deploy com Docker e Nginx](../26-deploy-docker-nginx/README.md)
+> **Próxima →** [28 · Projeto final](../28-projeto-final/README.md)
 
 ## O que você vai saber fazer
 
@@ -31,11 +31,11 @@ O endereço de métricas não passa pelo Nginx público. Só a rede do Compose, 
 - [Configuração de scrape](https://prometheus.io/docs/prometheus/latest/configuration/configuration/)
 - [Logger do Nest](https://docs.nestjs.com/techniques/logger)
 - [Pino](https://getpino.io/) — log JSON para Node. No Nest, o caminho usual é o [nestjs-pino](https://github.com/iamolegga/nestjs-pino)
-- A stack da sessão [25](../25-deploy-docker-nginx/README.md)
+- A stack da sessão [25](../26-deploy-docker-nginx/README.md)
 
 ## Tarefas
 
-Trabalhe no Compose da sessão 25 e no código do Nest. Grafana e Prometheus entram como serviços novos, não no lugar do Nginx.
+Trabalhe no Compose da sessão 26 e no código do Nest. Grafana e Prometheus entram como serviços novos, não no lugar do Nginx.
 
 ### Tarefa 1 — Três perguntas
 
@@ -65,7 +65,7 @@ Trabalhe no Compose da sessão 25 e no código do Nest. Grafana e Prometheus ent
 
 ### Tarefa 4 — O Nginx não publica isso
 
-**Faça:** confira a configuração da sessão 25. `/metrics` não está no `location` que vai para a internet. O Prometheus alcança a API pelo nome do serviço na rede do Compose (`api:3001/metrics`, ou a porta real). Se em desenvolvimento você publicou a porta da API no localhost para teste, o README diz para tirar essa publicação quando a stack for a da sessão 25.
+**Faça:** confira a configuração da sessão 26. `/metrics` não está no `location` que vai para a internet. O Prometheus alcança a API pelo nome do serviço na rede do Compose (`api:3001/metrics`, ou a porta real). Se em desenvolvimento você publicou a porta da API no localhost para teste, o README diz para tirar essa publicação quando a stack for a da sessão 26.
 
 **Pronto quando:** abrir `http://localhost:8080/metrics` no navegador não mostra os números. O Prometheus, sim, consegue ler.
 
@@ -113,7 +113,7 @@ Trabalhe no Compose da sessão 25 e no código do Nest. Grafana e Prometheus ent
 
 **Leia:** [Logger do Nest](https://docs.nestjs.com/techniques/logger) e o [Pino](https://getpino.io/). Para encaixar no Nest, siga o [nestjs-pino](https://github.com/iamolegga/nestjs-pino) na versão que você instalar.
 
-**Faça:** a API passa a escrever uma linha JSON por evento, com pelo menos horário, nível (`info`, `warn`, `error`) e mensagem. Criar um item gera uma linha `info`. Um erro gera `error`. Em desenvolvimento você pode deixar o Pino colorido, se a documentação mostrar o modo pretty. No container da sessão 25, a saída fica em JSON puro, que é o que uma ferramenta de log consegue filtrar.
+**Faça:** a API passa a escrever uma linha JSON por evento, com pelo menos horário, nível (`info`, `warn`, `error`) e mensagem. Criar um item gera uma linha `info`. Um erro gera `error`. Em desenvolvimento você pode deixar o Pino colorido, se a documentação mostrar o modo pretty. No container da sessão 26, a saída fica em JSON puro, que é o que uma ferramenta de log consegue filtrar.
 
 **Pronto quando:** `docker compose logs api` (ou o terminal do `npm run dev`) mostra um objeto com esses campos, e um `console.log` solto que ainda restava foi trocado pelo logger.
 
@@ -127,7 +127,7 @@ Provoque dois pedidos juntos. Filtre o log por um dos ids e confira que as linha
 
 ### Tarefa 13 — O que não entra no log
 
-**Faça:** revise as chamadas do logger. Senha, hash, token de sessão, chave do Firebase e corpo cru do login não aparecem. Pode logar o id do usuário e a rota. Erro inesperado loga a causa no servidor. A resposta HTTP continua genérica, como na sessão 22.
+**Faça:** revise as chamadas do logger. Senha, hash, token de sessão, chave do Firebase e corpo cru do login não aparecem. Pode logar o id do usuário e a rota. Erro inesperado loga a causa no servidor. A resposta HTTP continua genérica, como na sessão 23.
 
 **Pronto quando:** você provocou um login com senha errada e a linha de log não contém a senha.
 
@@ -156,4 +156,4 @@ Provoque dois pedidos juntos. Filtre o log por um dos ids e confira que as linha
 
 ## Próximo passo
 
-Siga para [27 · Projeto final](../27-projeto-final/README.md). Se o produto final tiver uma fila, um aviso ou uma métrica, reaproveite estas sessões em vez de inventar outro caminho. Não precisa repetir Kafka, Firebase e Grafana inteiros: a rubrica pede pelo menos um desses fios.
+Siga para [28 · Projeto final](../28-projeto-final/README.md). Se o produto final tiver uma fila, um aviso ou uma métrica, reaproveite estas sessões em vez de inventar outro caminho. Não precisa repetir Kafka, Firebase e Grafana inteiros: a rubrica pede pelo menos um desses fios.

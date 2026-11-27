@@ -1,6 +1,6 @@
 # Plano de estudos de desenvolvimento web
 
-Um caminho contínuo para quem está começando a programar. A trilha sai do terminal, passa por páginas, JavaScript, bancos, React, Next.js e uma API em NestJS, e chega em autenticação, filas, avisos, observabilidade e publicação com Docker e Nginx.
+Um caminho contínuo para quem está começando a programar. A trilha sai do terminal, passa por páginas, JavaScript, bancos, React, Next.js, programação orientada a objetos e uma API em NestJS, e chega em autenticação, filas, avisos, observabilidade e publicação com Docker e Nginx.
 
 O ritmo sugerido é de **6 a 8 horas por semana**, o que leva cerca de **22 meses**. Dá para ir mais rápido. O volume foi pensado para passar de um ano mesmo assim: cada sessão tem leitura na documentação oficial e um lote de tarefas com entrega concreta.
 
@@ -49,32 +49,33 @@ Termos que vão aparecer no caminho estão no [Glossário](GLOSSARIO.md).
 | 15 | [TypeScript com Node](sessoes/15-typescript-com-node/README.md) | 4 semanas | Um módulo do servidor tipado |
 | 16 | [Next.js, TypeScript e SSR](sessoes/16-nextjs/README.md) | 6 semanas | Projeto fullstack em Next.js |
 
-### Fase 4 — API profissional (cerca de 23 semanas)
+### Fase 4 — API profissional (cerca de 26 semanas)
 
 | | Sessão | Duração | Você entrega |
 | --- | --- | --- | --- |
-| 17 | [NestJS](sessoes/17-nestjs/README.md) | 5 semanas | API organizada em módulos |
-| 18 | [TypeORM](sessoes/18-typeorm/README.md) | 3 semanas | CRUD com entidades e relações |
-| 19 | [Migrations e seeders](sessoes/19-migrations-e-seeders/README.md) | 2 semanas | Banco criado por migration e seed |
-| 20 | [Tarefas agendadas](sessoes/20-cron-jobs/README.md) | 1 semana | Um cron job com função real |
-| 21 | [Workers, filas e Kafka](sessoes/21-workers-filas-e-kafka/README.md) | 3 semanas | Um worker com fila e um evento no Kafka |
-| 22 | [Segurança do backend](sessoes/22-seguranca-backend/README.md) | 4 semanas | Login, JWT, guards e checagens de acesso |
-| 23 | [Segurança do frontend](sessoes/23-seguranca-frontend/README.md) | 3 semanas | Next.js autenticado falando com o Nest |
-| 24 | [E-mail e push](sessoes/24-email-e-push/README.md) | 2 semanas | Um e-mail e uma notificação push de verdade |
+| 17 | [Programação orientada a objetos](sessoes/17-poo/README.md) | 3 semanas | Service, repositório e injeção na mão |
+| 18 | [NestJS](sessoes/18-nestjs/README.md) | 5 semanas | API organizada em módulos |
+| 19 | [TypeORM](sessoes/19-typeorm/README.md) | 3 semanas | CRUD com entidades e relações |
+| 20 | [Migrations e seeders](sessoes/20-migrations-e-seeders/README.md) | 2 semanas | Banco criado por migration e seed |
+| 21 | [Tarefas agendadas](sessoes/21-cron-jobs/README.md) | 1 semana | Um cron job com função real |
+| 22 | [Workers, filas e Kafka](sessoes/22-workers-filas-e-kafka/README.md) | 3 semanas | Um worker com fila e um evento no Kafka |
+| 23 | [Segurança do backend](sessoes/23-seguranca-backend/README.md) | 4 semanas | Login, JWT, guards e checagens de acesso |
+| 24 | [Segurança do frontend](sessoes/24-seguranca-frontend/README.md) | 3 semanas | Next.js autenticado falando com o Nest |
+| 25 | [E-mail e push](sessoes/25-email-e-push/README.md) | 2 semanas | Um e-mail e uma notificação push de verdade |
 
 ### Fase 5 — Publicar e fechar (cerca de 12 semanas)
 
 | | Sessão | Duração | Você entrega |
 | --- | --- | --- | --- |
-| 25 | [Deploy com Docker e Nginx](sessoes/25-deploy-docker-nginx/README.md) | 3 semanas | Stack inteira atrás do Nginx |
-| 26 | [Observabilidade](sessoes/26-observabilidade/README.md) | 3 semanas | Métrica no Grafana e log JSON com id do pedido |
-| 27 | [Projeto final](sessoes/27-projeto-final/README.md) | 6 semanas | Aplicação sua, do banco até a tela |
+| 26 | [Deploy com Docker e Nginx](sessoes/26-deploy-docker-nginx/README.md) | 3 semanas | Stack inteira atrás do Nginx |
+| 27 | [Observabilidade](sessoes/27-observabilidade/README.md) | 3 semanas | Métrica no Grafana e log JSON com id do pedido |
+| 28 | [Projeto final](sessoes/28-projeto-final/README.md) | 6 semanas | Aplicação sua, do banco até a tela |
 
 ## O que este plano não é
 
 Não é uma lista de cursos para assistir até o fim. A documentação oficial é a fonte. Vídeo ajuda quando um conceito não entra, e a tarefa continua sendo o que prova que você aprendeu.
 
-Não pule uma sessão porque o nome da próxima parece mais interessante. Next.js e NestJS usam tudo o que vem antes: HTTP, SQL, JavaScript e tipos.
+Não pule uma sessão porque o nome da próxima parece mais interessante. Next.js e NestJS usam tudo o que vem antes: HTTP, SQL, JavaScript, tipos e classes.
 
 ## Começar
 

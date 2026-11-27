@@ -1,6 +1,6 @@
-# Sessão 27 — Projeto final
+# Sessão 28 — Projeto final
 
-**Sessão 27 de 27 · cerca de 6 semanas**
+**Sessão 28 de 28 · cerca de 6 semanas**
 
 As sessões anteriores construíram a Estante de estudo. Esta é um produto com começo, meio e fim, no tema que você quiser. Pode continuar a Estante, se ela ainda te interessar, ou trocar o domínio (treinos, plantas, partidas, receitas). A troca de tema é livre. A troca de atalho não é: o que está na rubrica entra no projeto, mesmo que menor do que a Estante ficou.
 
@@ -8,7 +8,7 @@ O resultado é um repositório `estante-final` (ou o nome novo) que uma pessoa s
 
 > **Trilha:** [Índice](../../README.md) · [Como estudar](../../COMO-ESTUDAR.md) · [Progresso](../../PROGRESSO.md)
 >
-> **← Anterior:** [26 · Observabilidade](../26-observabilidade/README.md)
+> **← Anterior:** [27 · Observabilidade](../27-observabilidade/README.md)
 
 Não há sessão seguinte. No fim, você escolhe o que aprofundar.
 
@@ -88,7 +88,7 @@ Cada linha é obrigatória. "Quase" não conta.
 
 ### Tarefa 6 — Conta
 
-**Faça:** o núcleo da sessão 22, no tamanho do produto. Sem segundo fator, sem login social, a menos que o escopo tenha pedido. Cookie de sessão para o navegador. JWT só se houver um cliente que não é o site; se não houver, escreva que ficou de fora e por quê. Não implemente os dois "porque a rubrica antiga da Estante tinha".
+**Faça:** o núcleo da sessão 23, no tamanho do produto. Sem segundo fator, sem login social, a menos que o escopo tenha pedido. Cookie de sessão para o navegador. JWT só se houver um cliente que não é o site; se não houver, escreva que ficou de fora e por quê. Não implemente os dois "porque a rubrica antiga da Estante tinha".
 
 **Pronto quando:** a rubrica de auth está satisfeita e o que você não fez está no "não entra".
 
@@ -100,19 +100,19 @@ Cada linha é obrigatória. "Quase" não conta.
 
 ### Tarefa 8 — Rotina agendada
 
-**Faça:** um cron com efeito no domínio (encerrar o que passou do prazo, marcar o que ficou parado, resumir uma contagem que a tela mostra). Se esse efeito for pesado ou disparar um aviso, o cron só enfileira, como na sessão 21. Teste a regra sem depender do relógio. A expressão cron está traduzida no README.
+**Faça:** um cron com efeito no domínio (encerrar o que passou do prazo, marcar o que ficou parado, resumir uma contagem que a tela mostra). Se esse efeito for pesado ou disparar um aviso, o cron só enfileira, como na sessão 22. Teste a regra sem depender do relógio. A expressão cron está traduzida no README.
 
 **Pronto quando:** você observa um efeito real no banco, no horário curto de teste, e depois coloca o horário de verdade.
 
 ### Tarefa 9 — Fechar a segurança que o produto usa
 
-**Faça:** percorra a tabela de riscos da sessão 22 e marque só as linhas que este produto tem. CORS, cabeçalhos, limite no login, whitelist, CSRF se houver cookie, segredo fora do Git. Não marque linha de feature que você não ligou.
+**Faça:** percorra a tabela de riscos da sessão 23 e marque só as linhas que este produto tem. CORS, cabeçalhos, limite no login, whitelist, CSRF se houver cookie, segredo fora do Git. Não marque linha de feature que você não ligou.
 
 **Pronto quando:** a tabela revisada está em `docs/seguranca.md`.
 
 ### Tarefa 10 — Stack única
 
-**Faça:** o compose da sessão 25, ajustado aos nomes deste produto. Só o Nginx publica porta. Migration é comando separado. Backup com `pg_dump` documentado.
+**Faça:** o compose da sessão 26, ajustado aos nomes deste produto. Só o Nginx publica porta. Migration é comando separado. Backup com `pg_dump` documentado.
 
 **Pronto quando:** `docker compose down` sem `-v` e `up` de novo devolvem você à mesma conta e aos mesmos dados.
 
@@ -156,4 +156,4 @@ Sugestões possíveis, só se tiverem doído: teste de interface, fila em vez de
 - [ ] 12. Três correções vindas de outra pessoa
 - [ ] 13. Retrospectiva
 
-Quando o checklist fechar, marque a sessão 27 em [Progresso](../../PROGRESSO.md). O plano acabou. O repositório do projeto final é o que você mostra quando alguém perguntar o que você estudou.
+Quando o checklist fechar, marque a sessão 28 em [Progresso](../../PROGRESSO.md). O plano acabou. O repositório do projeto final é o que você mostra quando alguém perguntar o que você estudou.

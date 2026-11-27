@@ -1,15 +1,15 @@
-# Sessão 23 — Segurança do frontend com Next e Nest
+# Sessão 24 — Segurança do frontend com Next e Nest
 
-**Sessão 23 de 27 · cerca de 3 semanas**
+**Sessão 24 de 28 · cerca de 3 semanas**
 
-O Next.js deixa de falar direto com o Postgres. Quem manda no dado é o Nest. O navegador entra na conta, vê só a própria estante e não guarda access token em `localStorage`. O cookie de sessão fica `HttpOnly`: o JavaScript da página não lê esse valor. O JWT da sessão 22 continua válido para o `curl` e para um cliente que não é o site.
+O Next.js deixa de falar direto com o Postgres. Quem manda no dado é o Nest. O navegador entra na conta, vê só a própria estante e não guarda access token em `localStorage`. O cookie de sessão fica `HttpOnly`: o JavaScript da página não lê esse valor. O JWT da sessão 23 continua válido para o `curl` e para um cliente que não é o site.
 
 Esconder botão não protege nada. A API já recusa. O frontend só precisa não mentir para a pessoa, não vazar segredo e não guardar credencial onde um script da página alcança.
 
 > **Trilha:** [Índice](../../README.md) · [Como estudar](../../COMO-ESTUDAR.md) · [Progresso](../../PROGRESSO.md)
 >
-> **← Anterior:** [22 · Segurança do backend](../22-seguranca-backend/README.md)
-> **Próxima →** [24 · E-mail e push](../24-email-e-push/README.md)
+> **← Anterior:** [23 · Segurança do backend](../23-seguranca-backend/README.md)
+> **Próxima →** [25 · E-mail e push](../25-email-e-push/README.md)
 
 ## O que você vai saber fazer
 
@@ -41,7 +41,7 @@ Volte ao repositório `estante-next`. Remova o acesso direto ao Postgres das pá
 
 - o que o frontend garante para a experiência (não mostrar a tela de outra pessoa, não pedir de novo o que já se sabe);
 - o que só o Nest garante (o dado não sai, a senha não volta, o item alheio não muda);
-- por que um `if` no React que esconde o botão "apagar" não substitui o teste da sessão 22.
+- por que um `if` no React que esconde o botão "apagar" não substitui o teste da sessão 23.
 
 **Pronto quando:** as três frases estão no topo do README.
 
@@ -49,7 +49,7 @@ Volte ao repositório `estante-next`. Remova o acesso direto ao Postgres das pá
 
 **Faça:** decida as portas em desenvolvimento (por exemplo Next em 3000 e Nest em 3001, ou o par que você já usa). O CORS do Nest lista exatamente a origem do Next, com credencial se o cookie precisar. A URL da API no Next é variável de servidor, sem `NEXT_PUBLIC_`, quando quem chama o Nest é o servidor do Next. Se algum `fetch` for do navegador direto para o Nest, aí a URL precisa ser pública: escreva qual dos dois modelos você usou e por quê.
 
-**Pronto quando:** um pedido real funciona e uma origem errada continua barrada, como na tarefa 10 da sessão 22.
+**Pronto quando:** um pedido real funciona e uma origem errada continua barrada, como na tarefa 10 da sessão 23.
 
 ### Tarefa 3 — Login e cadastro
 
@@ -103,7 +103,7 @@ Volte ao repositório `estante-next`. Remova o acesso direto ao Postgres das pá
 
 ### Tarefa 10 — O JWT não mora na página
 
-**Faça:** o site não pede, não guarda e não reenvia o access token. O `curl` da sessão 22 continua sendo o cliente desse token. Escreva no README os dois clientes: navegador com cookie, terminal com Bearer.
+**Faça:** o site não pede, não guarda e não reenvia o access token. O `curl` da sessão 23 continua sendo o cliente desse token. Escreva no README os dois clientes: navegador com cookie, terminal com Bearer.
 
 **Pronto quando:** uma busca no repositório do Next por `Bearer` e por `JWT_SECRET` não mostra uso no app. Menção no README pode existir, desde que seja a explicação.
 
@@ -136,4 +136,4 @@ Volte ao repositório `estante-next`. Remova o acesso direto ao Postgres das pá
 
 ## Próximo passo
 
-Siga para [24 · E-mail e push](../24-email-e-push/README.md). A conta e a tela já existem. Agora a Estante avisa a pessoa, em vez de só guardar o dado.
+Siga para [25 · E-mail e push](../25-email-e-push/README.md). A conta e a tela já existem. Agora a Estante avisa a pessoa, em vez de só guardar o dado.

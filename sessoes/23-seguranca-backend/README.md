@@ -1,15 +1,15 @@
-# Sessão 22 — Segurança do backend
+# Sessão 23 — Segurança do backend
 
-**Sessão 22 de 27 · cerca de 4 semanas**
+**Sessão 23 de 28 · cerca de 4 semanas**
 
-A API passa a saber quem está chamando. Cada pessoa tem a própria estante. A senha vira hash, o acesso das rotas passa por guard, e um item só é alterado por quem é dono dele. O token JWT existe para um cliente que manda `Authorization: Bearer`. O navegador, na sessão 23, vai usar o cookie de sessão que o próprio Nest descreve, não o `localStorage`.
+A API passa a saber quem está chamando. Cada pessoa tem a própria estante. A senha vira hash, o acesso das rotas passa por guard, e um item só é alterado por quem é dono dele. O token JWT existe para um cliente que manda `Authorization: Bearer`. O navegador, na sessão 24, vai usar o cookie de sessão que o próprio Nest descreve, não o `localStorage`.
 
 Esta sessão é defesa do seu programa. O critério de pronto é a API recusar o que não deve aceitar. Não procure roteiro de ataque; a documentação linkada já separa o controle do abuso.
 
 > **Trilha:** [Índice](../../README.md) · [Como estudar](../../COMO-ESTUDAR.md) · [Progresso](../../PROGRESSO.md)
 >
-> **← Anterior:** [21 · Workers, filas e Kafka](../21-workers-filas-e-kafka/README.md)
-> **Próxima →** [23 · Segurança do frontend](../23-seguranca-frontend/README.md)
+> **← Anterior:** [22 · Workers, filas e Kafka](../22-workers-filas-e-kafka/README.md)
+> **Próxima →** [24 · Segurança do frontend](../24-seguranca-frontend/README.md)
 
 ## O que você vai saber fazer
 
@@ -125,7 +125,7 @@ Se o contrato do store for grande demais numa semana, implemente o pedaço que a
 
 **Leia:** [Security headers](https://docs.nestjs.com/security/helmet) e [CORS](https://docs.nestjs.com/security/cors), inclusive o aviso sobre `origin: true` junto de credencial.
 
-**Faça:** ligue `useSecurityHeaders()` como a página mostrar. CORS aceita só a origem do Next (ainda que o Next nasça na sessão 23: use `http://localhost:3000` ou a porta que você for usar) e os métodos que a API realmente oferece. Credencial, se o cookie de sessão precisar, entra com a origem listada, não com `*`.
+**Faça:** ligue `useSecurityHeaders()` como a página mostrar. CORS aceita só a origem do Next (ainda que o Next nasça na sessão 24: use `http://localhost:3000` ou a porta que você for usar) e os métodos que a API realmente oferece. Credencial, se o cookie de sessão precisar, entra com a origem listada, não com `*`.
 
 **Pronto quando:** `curl -I` mostra um cabeçalho que o `useSecurityHeaders` adiciona, e uma origem que não está na lista não recebe `Access-Control-Allow-Origin` liberando ela.
 
@@ -139,7 +139,7 @@ Se o contrato do store for grande demais numa semana, implemente o pedaço que a
 
 ### Tarefa 12 — O que a resposta não carrega
 
-**Faça:** revise os JSON de item, nota, usuário e erro. Não saem hash, segredo, stacktrace nem caminho de arquivo. O filtro da sessão 17 continua valendo para exceção não prevista.
+**Faça:** revise os JSON de item, nota, usuário e erro. Não saem hash, segredo, stacktrace nem caminho de arquivo. O filtro da sessão 18 continua valendo para exceção não prevista.
 
 **Pronto quando:** você procura no código as palavras `password`, `hash` e `stack` nas respostas e anota o que encontrou.
 
@@ -147,7 +147,7 @@ Se o contrato do store for grande demais numa semana, implemente o pedaço que a
 
 **Leia:** *Production checklist* e *Testing* na página de autenticação.
 
-**Faça:** copie para o README só os itens que se aplicam ao que você ligou (store no banco, segredo fora do Git, HTTPS ainda não: marque como pendente da sessão 25, CSRF de cookie pendente da sessão 23 se você usa sessão por cookie). Marque feito o que já está feito, com o arquivo que prova.
+**Faça:** copie para o README só os itens que se aplicam ao que você ligou (store no banco, segredo fora do Git, HTTPS ainda não: marque como pendente da sessão 26, CSRF de cookie pendente da sessão 24 se você usa sessão por cookie). Marque feito o que já está feito, com o arquivo que prova.
 
 **Pronto quando:** não há item "feito" sem um arquivo ou um comando correspondente.
 
@@ -181,4 +181,4 @@ Se o contrato do store for grande demais numa semana, implemente o pedaço que a
 
 ## Próximo passo
 
-Siga para [23 · Segurança do frontend](../23-seguranca-frontend/README.md).
+Siga para [24 · Segurança do frontend](../24-seguranca-frontend/README.md).

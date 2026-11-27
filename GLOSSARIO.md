@@ -39,6 +39,11 @@ Definições curtas para destravar a leitura. O detalhe mora na documentação l
 | Componente | Um pedaço de interface com marcação e comportamento juntos. |
 | SSR | Renderização no servidor: o HTML da página já chega montado. |
 | TypeScript | JavaScript com tipos checados antes de rodar. |
+| Classe | O molde: campos e métodos. Sozinha, não é um item da estante. |
+| Instância | O objeto criado com `new`. Dois itens são duas instâncias da mesma classe. |
+| Encapsulamento | O estado fica privado. Quem está fora muda o item por um método. |
+| Composição | Um objeto que contém outros. A coleção tem itens. |
+| Injeção de dependência | Receber no construtor o objeto necessário, em vez de criá-lo por dentro. Na sessão 18, quem faz isso é o Nest. |
 | DTO | O formato combinado de entrada ou saída de uma rota. |
 | ORM | Uma camada que representa tabelas como classes. Neste plano, o TypeORM. |
 | Entidade | A classe que o TypeORM associa a uma tabela. |

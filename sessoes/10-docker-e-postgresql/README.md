@@ -1,6 +1,6 @@
 # Sessão 10 — Docker e PostgreSQL
 
-**Sessão 10 de 27 · cerca de 3 semanas**
+**Sessão 10 de 28 · cerca de 3 semanas**
 
 O SQLite era um arquivo. O PostgreSQL é um servidor: ele fica ligado, escuta uma porta, tem usuário e senha. O Docker sobe esse servidor num container, com um volume para os dados não sumirem quando o container for recriado.
 

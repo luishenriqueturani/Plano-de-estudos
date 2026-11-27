@@ -1,6 +1,6 @@
 # Sessão 07 — Async e await
 
-**Sessão 7 de 27 · cerca de 3 semanas**
+**Sessão 7 de 28 · cerca de 3 semanas**
 
 Na sessão 06 o arquivo já era gravado com `async/await`, como quem usa uma ferramenta sem abrir o manual. Esta sessão abre o manual. Uma operação de disco, de rede ou de banco não termina na linha seguinte. O programa precisa dizer o que fazer quando o resultado chegar, e o que fazer quando falhar.
 

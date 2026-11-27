@@ -1,6 +1,6 @@
 # Sessão 06 — Node.js e lógica de programação
 
-**Sessão 6 de 27 · cerca de 6 semanas**
+**Sessão 6 de 28 · cerca de 6 semanas**
 
 A Estante vira um programa de linha de comando: incluir, listar, concluir e apagar itens num arquivo JSON. O assunto novo, por baixo dos comandos, é lógica: quebrar um problema, dar nome ao dado e testar o pedaço sem abrir o navegador.
 

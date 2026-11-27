@@ -1,6 +1,6 @@
 # Sessão 9 — Banco de dados com SQLite
 
-**Sessão 9 de 27 · cerca de 3 semanas**
+**Sessão 9 de 28 · cerca de 3 semanas**
 
 O arquivo JSON guarda tudo num bloco só. Um banco relacional guarda linhas, exige colunas e permite perguntar "só os que estão em andamento, em ordem". Você aprende SQL no SQLite, que é um arquivo único, e liga a CLI da Estante nele.
 

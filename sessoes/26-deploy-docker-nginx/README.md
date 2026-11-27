@@ -1,6 +1,6 @@
-# Sessão 25 — Deploy com Docker e Nginx
+# Sessão 26 — Deploy com Docker e Nginx
 
-**Sessão 25 de 27 · cerca de 3 semanas**
+**Sessão 26 de 28 · cerca de 3 semanas**
 
 Até agora cada coisa sobe na mão: Compose do banco, `npm run dev` do Nest, `npm run dev` do Next. Esta sessão faz a mesma Estante subir com um comando, atrás do Nginx. O Nginx é a única porta publicada. O Postgres não aparece na rede da sua máquina para o mundo, nem para a sua rede de casa além do necessário: a API fala com ele pela rede interna do Compose.
 
@@ -8,8 +8,8 @@ O alvo é o seu computador, imitando um servidor. Colocar isso numa VPS vem depo
 
 > **Trilha:** [Índice](../../README.md) · [Como estudar](../../COMO-ESTUDAR.md) · [Progresso](../../PROGRESSO.md)
 >
-> **← Anterior:** [24 · E-mail e push](../24-email-e-push/README.md)
-> **Próxima →** [26 · Observabilidade](../26-observabilidade/README.md)
+> **← Anterior:** [25 · E-mail e push](../25-email-e-push/README.md)
+> **Próxima →** [27 · Observabilidade](../27-observabilidade/README.md)
 
 ## O que você vai saber fazer
 
@@ -29,7 +29,7 @@ O alvo é o seu computador, imitando um servidor. Colocar isso numa VPS vem depo
 - [Docker no Arch](https://wiki.archlinux.org/title/Docker)
 - [Variáveis de ambiente do Next em produção](https://nextjs.org/docs/app/guides/environment-variables)
 - A documentação de `output: 'standalone'` do Next, buscada em [nextjs.org/docs](https://nextjs.org/docs) por "standalone", para a imagem ficar menor
-- O checklist de produção que você começou na [sessão 22](../22-seguranca-backend/README.md)
+- O checklist de produção que você começou na [sessão 23](../23-seguranca-backend/README.md)
 
 ## Tarefas
 
@@ -82,7 +82,7 @@ Pode ser um repositório `estante-deploy` que referencia os outros, ou uma pasta
 
 ### Tarefa 6 — Configuração de produção local
 
-**Faça:** `.env` fora da imagem, passado pelo Compose. `.env.example` sem senha real. `NODE_ENV=production` na API, para o Nest recusar store de autenticação só em memória, como o checklist da sessão 22. As migrations rodam como um comando explícito (`docker compose run api npm run migration:run`), não escondidas num jeito que aplique de novo a cada request. O seed de categorias, idem.
+**Faça:** `.env` fora da imagem, passado pelo Compose. `.env.example` sem senha real. `NODE_ENV=production` na API, para o Nest recusar store de autenticação só em memória, como o checklist da sessão 23. As migrations rodam como um comando explícito (`docker compose run api npm run migration:run`), não escondidas num jeito que aplique de novo a cada request. O seed de categorias, idem.
 
 **Pronto quando:** uma base vazia, seguindo o README, recebe migration, seed e login pela interface em `localhost:8080`.
 
@@ -149,4 +149,4 @@ Pode ser um repositório `estante-deploy` que referencia os outros, ou uma pasta
 
 ## Próximo passo
 
-Siga para [26 · Observabilidade](../26-observabilidade/README.md). A stack sobe. A próxima sessão mostra se ela está saudável.
+Siga para [27 · Observabilidade](../27-observabilidade/README.md). A stack sobe. A próxima sessão mostra se ela está saudável.

@@ -1,6 +1,6 @@
 # Sessão 12 — Frontend e backend juntos
 
-**Sessão 12 de 27 · cerca de 5 semanas**
+**Sessão 12 de 28 · cerca de 5 semanas**
 
 A página da sessão 04 e a API da sessão 11 passam a ser um produto só: HTML, CSS e JavaScript no navegador, Node no servidor, PostgreSQL no Docker. Incluir um item na tela grava no banco. Recarregar em outro navegador mostra o mesmo item, porque o `localStorage` deixou de ser a fonte.
 

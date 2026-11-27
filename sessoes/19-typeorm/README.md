@@ -1,15 +1,15 @@
-# Sessão 18 — TypeORM
+# Sessão 19 — TypeORM
 
-**Sessão 18 de 27 · cerca de 3 semanas**
+**Sessão 19 de 28 · cerca de 3 semanas**
 
 O service deixa o array e passa a usar o PostgreSQL que já está no Docker. O TypeORM representa tabelas como classes. Você continua sabendo SQL: a tarefa final desta sessão é ler a query que o ORM gerou e reconhecer o `SELECT` da sessão 10.
 
-`synchronize: true` pode ligar no começo, só na sua máquina, para a tabela nascer sozinha. A sessão 19 desliga isso e troca por migrations. Não pule essa combinação: ligar agora sem desligar depois é como a documentação avisa, um jeito de perder dado.
+`synchronize: true` pode ligar no começo, só na sua máquina, para a tabela nascer sozinha. A sessão 20 desliga isso e troca por migrations. Não pule essa combinação: ligar agora sem desligar depois é como a documentação avisa, um jeito de perder dado.
 
 > **Trilha:** [Índice](../../README.md) · [Como estudar](../../COMO-ESTUDAR.md) · [Progresso](../../PROGRESSO.md)
 >
-> **← Anterior:** [17 · NestJS](../17-nestjs/README.md)
-> **Próxima →** [19 · Migrations e seeders](../19-migrations-e-seeders/README.md)
+> **← Anterior:** [18 · NestJS](../18-nestjs/README.md)
+> **Próxima →** [20 · Migrations e seeders](../20-migrations-e-seeders/README.md)
 
 ## O que você vai saber fazer
 
@@ -107,7 +107,7 @@ Continue em `estante-nest`. O Compose sobe o Postgres. Use o papel de aplicaçã
 
 ### Tarefa 11 — synchronize ainda ligado, e a data de desligar
 
-**Faça:** no README, em destaque: `synchronize` está `true` só até a sessão 19. Escreva o que ele faz ao renomear uma coluna (dica da própria documentação do Nest: não é um caminho seguro quando já há dados).
+**Faça:** no README, em destaque: `synchronize` está `true` só até a sessão 20. Escreva o que ele faz ao renomear uma coluna (dica da própria documentação do Nest: não é um caminho seguro quando já há dados).
 
 **Pronto quando:** esse aviso está no topo do README, não no fim.
 
@@ -127,4 +127,4 @@ Continue em `estante-nest`. O Compose sobe o Postgres. Use o papel de aplicaçã
 
 ## Próximo passo
 
-Siga para [19 · Migrations e seeders](../19-migrations-e-seeders/README.md).
+Siga para [20 · Migrations e seeders](../20-migrations-e-seeders/README.md).

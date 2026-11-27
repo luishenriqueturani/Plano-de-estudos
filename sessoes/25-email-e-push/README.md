@@ -1,17 +1,17 @@
-# Sessão 24 — E-mail e notificações push
+# Sessão 25 — E-mail e notificações push
 
-**Sessão 24 de 27 · cerca de 2 semanas**
+**Sessão 25 de 28 · cerca de 2 semanas**
 
 A Estante já sabe quem é a pessoa e já tem uma fila. Falta avisar. São dois caminhos, de propósito diferentes.
 
 O e-mail sai por SMTP, com o Nodemailer, dentro de um job. O Firebase Cloud Messaging não envia e-mail da aplicação. O push, esse sim, é o Firebase: o navegador entrega um token, o Nest guarda, o worker pede ao Firebase para entregar a notificação. Existe extensão do Firebase que dispara e-mail a partir do Firestore. Este plano não troca o Postgres por isso.
 
-Nenhum dos dois avisos bloqueia o pedido HTTP. Os dois passam pela fila da sessão 21.
+Nenhum dos dois avisos bloqueia o pedido HTTP. Os dois passam pela fila da sessão 22.
 
 > **Trilha:** [Índice](../../README.md) · [Como estudar](../../COMO-ESTUDAR.md) · [Progresso](../../PROGRESSO.md)
 >
-> **← Anterior:** [23 · Segurança do frontend](../23-seguranca-frontend/README.md)
-> **Próxima →** [25 · Deploy com Docker e Nginx](../25-deploy-docker-nginx/README.md)
+> **← Anterior:** [24 · Segurança do frontend](../24-seguranca-frontend/README.md)
+> **Próxima →** [26 · Deploy com Docker e Nginx](../26-deploy-docker-nginx/README.md)
 
 ## O que você vai saber fazer
 
@@ -29,7 +29,7 @@ Nenhum dos dois avisos bloqueia o pedido HTTP. Os dois passam pela fila da sess�
 - [FCM no navegador](https://firebase.google.com/docs/cloud-messaging/js/client)
 - [Enviar pelo Admin SDK](https://firebase.google.com/docs/cloud-messaging/server)
 - [Configurar o Admin SDK](https://firebase.google.com/docs/admin/setup)
-- A sessão [21](../21-workers-filas-e-kafka/README.md) e a conta da sessão [23](../23-seguranca-frontend/README.md)
+- A sessão [21](../22-workers-filas-e-kafka/README.md) e a conta da sessão [23](../24-seguranca-frontend/README.md)
 
 Para o SMTP de estudo, o próprio Nodemailer documenta uma conta de teste (Ethereal) na página de uso. Mailtrap ou outro capturador serve do mesmo jeito, se você ler a documentação dele. A meta é ver a mensagem numa caixa de desenvolvimento, sem entregar na caixa real de alguém.
 
@@ -58,7 +58,7 @@ Escolha um fato da Estante para cada um. Pode ser o mesmo fato nos dois, se voc�
 
 ### Tarefa 3 — O envio vira job
 
-**Faça:** o worker da sessão 21 ganha um job `enviar-email` com destinatário, assunto e texto. A API, ao criar a conta ou ao disparar o fato que você escolheu, só enfileira. Com o worker desligado, o cadastro (ou o fato) ainda conclui. Com o worker ligado, o e-mail aparece na caixa.
+**Faça:** o worker da sessão 22 ganha um job `enviar-email` com destinatário, assunto e texto. A API, ao criar a conta ou ao disparar o fato que você escolheu, só enfileira. Com o worker desligado, o cadastro (ou o fato) ainda conclui. Com o worker ligado, o e-mail aparece na caixa.
 
 **Pronto quando:** você reproduz os dois estados e anota no README.
 
@@ -66,7 +66,7 @@ Escolha um fato da Estante para cada um. Pode ser o mesmo fato nos dois, se voc�
 
 **Faça:** se o e-mail é consequência do cadastro, o usuário já está gravado antes do job. Se o SMTP falhar, o retry da fila tenta de novo. Não apague o usuário porque o e-mail não saiu. Escreva essa decisão.
 
-**Pronto quando:** uma falha proposital do transporte (senha errada) deixa o usuário no banco e o job em retry ou falho, como você configurou na sessão 21.
+**Pronto quando:** uma falha proposital do transporte (senha errada) deixa o usuário no banco e o job em retry ou falho, como você configurou na sessão 22.
 
 ### Tarefa 5 — Projeto Firebase
 
@@ -125,4 +125,4 @@ Escolha um fato da Estante para cada um. Pode ser o mesmo fato nos dois, se voc�
 
 ## Próximo passo
 
-Siga para [25 · Deploy com Docker e Nginx](../25-deploy-docker-nginx/README.md). Redis, worker, API e site vão morar no mesmo Compose. A chave do Firebase continua fora da imagem.
+Siga para [26 · Deploy com Docker e Nginx](../26-deploy-docker-nginx/README.md). Redis, worker, API e site vão morar no mesmo Compose. A chave do Firebase continua fora da imagem.

@@ -1,6 +1,6 @@
 # Sessão 13 — React com Vite
 
-**Sessão 13 de 27 · cerca de 6 semanas**
+**Sessão 13 de 28 · cerca de 6 semanas**
 
 A Estante ganha uma interface em componentes. O Vite sobe o ambiente de desenvolvimento e gera o build. A API continua sendo a da sessão 12: React não substitui o servidor, substitui o DOM feito na mão.
 
